@@ -1,0 +1,28 @@
+.main-navigation {
+  grid-area: main-navigation;
+  height: 50px;
+}
+
+.main-navigation-list,
+.sub-navigation-list {
+  display: flex;
+  height: 100%;
+}
+
+.main-navigation-list-item,
+.sub-navigation-list-item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-navigation {
+  grid-area: sub-navigation;
+  height: 80px;
+}
+
+.detail-navigation {
+  grid-area: detail-navigation;
+}
