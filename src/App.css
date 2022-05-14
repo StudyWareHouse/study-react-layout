@@ -5,9 +5,8 @@
     "main-navigation    aside"
     "sub-navigation     aside"
     "detail-navigation  aside"
-    "main               aside"
-    "footer             .";
-  grid-template-rows: auto auto auto auto 1fr auto;
+    "main               aside";
+  grid-template-rows: auto auto auto auto 1fr;
   grid-template-columns: 1fr 90px;
   column-gap: 10px;
   width: 1080px;
@@ -20,4 +19,15 @@
 
 .footer {
   grid-area: footer;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-sub-contents {
+  display: flex;
+  gap: 10px;
 }

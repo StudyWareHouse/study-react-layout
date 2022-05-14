@@ -46,6 +46,9 @@ const Nav = () => {
           })}
         </ul>
       </nav>
+      <nav className="detail-navigation">
+        <ul className="detail-navigation-list"></ul>
+      </nav>
     </>
   );
 };

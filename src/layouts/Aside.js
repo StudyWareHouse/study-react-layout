@@ -1,6 +1,10 @@
 import "./Aside.css";
+import { createDummyImage } from "../utils";
 
-const dummyAsideImageURL = "https://dummyimage.com/90x160/000000/fff";
+const dummyAsideImageURL = createDummyImage({
+  width: 90,
+  height: 160,
+});
 
 const Aside = () => {
   return (
