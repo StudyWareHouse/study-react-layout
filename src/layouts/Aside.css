@@ -1,0 +1,11 @@
+.main-aside {
+  grid-area: aside;
+}
+
+.aside-ad-list li {
+  margin-top: 4px;
+}
+
+.aside-ad-list li:first-of-type {
+  margin-top: 0;
+}
