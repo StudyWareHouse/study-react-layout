@@ -1,0 +1,11 @@
+.main-header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  height: 70px;
+}
+
+.login-menu {
+  display: flex;
+}
