@@ -1,5 +1,9 @@
-.main-navigation {
+.main-navigations {
   grid-area: main-navigation;
+  margin-bottom: 10px;
+}
+
+.main-navigation {
   height: 50px;
 }
 
@@ -19,10 +23,9 @@
 }
 
 .sub-navigation {
-  grid-area: sub-navigation;
   height: 80px;
 }
 
 .detail-navigation {
-  grid-area: detail-navigation;
+  column-count: 5;
 }

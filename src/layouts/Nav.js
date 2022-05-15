@@ -25,7 +25,7 @@ const Nav = () => {
   ];
 
   return (
-    <>
+    <div className="main-navigations">
       <nav className="main-navigation">
         <ul className="main-navigation-list">
           {mainNavigators.map((mainNavigator) => {
@@ -47,9 +47,32 @@ const Nav = () => {
         </ul>
       </nav>
       <nav className="detail-navigation">
-        <ul className="detail-navigation-list"></ul>
+        <strong>물건 카테고리</strong>
+        <ul className="detail-navigation-list">
+          {Array.from(new Array(7)).map((_, index) => <li>물건 이름</li>)}
+        </ul>
+        <strong>물건 카테고리</strong>
+        <ul className="detail-navigation-list">
+          {Array.from(new Array(8)).map((_, index) => <li>물건 이름</li>)}
+        </ul>
+        <strong>물건 카테고리</strong>
+        <ul className="detail-navigation-list">
+          {Array.from(new Array(5)).map((_, index) => <li>물건 이름</li>)}
+        </ul>
+        <strong>물건 카테고리</strong>
+        <ul className="detail-navigation-list">
+          {Array.from(new Array(8)).map((_, index) => <li>물건 이름</li>)}
+        </ul>
+        <strong>물건 카테고리</strong>
+        <ul className="detail-navigation-list">
+          {Array.from(new Array(7)).map((_, index) => <li>물건 이름</li>)}
+        </ul>
+        <strong>물건 카테고리</strong>
+        <ul className="detail-navigation-list">
+          {Array.from(new Array(9)).map((_, index) => <li>물건 이름</li>)}
+        </ul>
       </nav>
-    </>
+    </div>
   );
 };
 

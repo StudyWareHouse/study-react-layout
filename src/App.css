@@ -3,10 +3,8 @@
   grid-template-areas:
     "header             ."
     "main-navigation    aside"
-    "sub-navigation     aside"
-    "detail-navigation  aside"
     "main               aside";
-  grid-template-rows: auto auto auto auto 1fr;
+  grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr 90px;
   column-gap: 10px;
   width: 1080px;
