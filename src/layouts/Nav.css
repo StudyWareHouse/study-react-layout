@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #000;
 }
 
 .sub-navigation {
@@ -28,4 +29,16 @@
 
 .detail-navigation {
   column-count: 5;
+  padding: 16px 0;
+}
+
+.detail-navigation-title {
+  display: block;
+  text-indent: 18px;
+  font-weight: 700;
+}
+
+.detail-navigation-title,
+.detail-navigation-list li {
+  padding: 8px 0;
 }

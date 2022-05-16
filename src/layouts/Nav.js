@@ -24,6 +24,8 @@ const Nav = () => {
     { name: "출산/유아동" },
   ];
 
+  const productCounts = [7, 8, 5, 8, 7, 9]
+
   return (
     <div className="main-navigations">
       <nav className="main-navigation">
@@ -47,30 +49,14 @@ const Nav = () => {
         </ul>
       </nav>
       <nav className="detail-navigation">
-        <strong>물건 카테고리</strong>
-        <ul className="detail-navigation-list">
-          {Array.from(new Array(7)).map((_, index) => <li>물건 이름</li>)}
-        </ul>
-        <strong>물건 카테고리</strong>
-        <ul className="detail-navigation-list">
-          {Array.from(new Array(8)).map((_, index) => <li>물건 이름</li>)}
-        </ul>
-        <strong>물건 카테고리</strong>
-        <ul className="detail-navigation-list">
-          {Array.from(new Array(5)).map((_, index) => <li>물건 이름</li>)}
-        </ul>
-        <strong>물건 카테고리</strong>
-        <ul className="detail-navigation-list">
-          {Array.from(new Array(8)).map((_, index) => <li>물건 이름</li>)}
-        </ul>
-        <strong>물건 카테고리</strong>
-        <ul className="detail-navigation-list">
-          {Array.from(new Array(7)).map((_, index) => <li>물건 이름</li>)}
-        </ul>
-        <strong>물건 카테고리</strong>
-        <ul className="detail-navigation-list">
-          {Array.from(new Array(9)).map((_, index) => <li>물건 이름</li>)}
-        </ul>
+        {productCounts.map(count =>
+          <section>
+            <strong className="detail-navigation-title">카테고리 제목</strong>
+            <ul className="detail-navigation-list">
+              {Array.from(new Array(count)).map((_, index) => <li>제품 이름</li>)}
+            </ul>
+          </section>
+        )}
       </nav>
     </div>
   );
